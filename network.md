@@ -14,3 +14,15 @@
 ![image](https://user-images.githubusercontent.com/62834754/132021970-1493865a-8828-4baa-825c-2a9ac7ee2cce.png)
 我看到它总共发起了113个请求、这种情况不知是多还是少、对比reddit（被称为国外的贴吧）的200多个请求、我不能说贴吧首页就是好的、因为Reddit已经集成了web应用的很多最新功能、在这方面贴吧落后太多。
 
+下面就是依次介绍下面这张图片中大家主要会用到的列展示(只讨论可能会引起争议的)
+
+![image](https://user-images.githubusercontent.com/62834754/132024391-54e11307-57b9-403f-9194-c31aaef7e2f6.png)
+- type 在Google开发者工具文档中表示的是接受资源的MIME类型、这里可能在判断的时候是结合request Accept与response中的content-type两者相结合进行判断的。
+- initiator 表示这条请求发起的经过的路径，如果这条请求是经过js文件发起的，它还会显示在js文件中的调用栈，这里面的东西对于进一步调试是至关重要的，我们可以找到一些事情发生的缘由、而不仅仅是获得资源
+- size 上面显示的是在网络中传输包的大小、下面的显示获得http response的大小。
+- Set cookies 显示了该请求设置了cookie的数量
+- Cookie 该请求携带的cookie数量
+- Protocol 协议名 现在的网络情况多为http 1.1 
+- schema 显示url中协议部分的名称https/http
+- connection id 显示http链接的标识、你可以查看是否一个链接被多次复用，如果协议列显示 h2，则浏览器可以为多个并发请求重用相同的连接
+- 
