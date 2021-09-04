@@ -55,4 +55,10 @@
 3.创建SSL链接
 4.发起http请求
 通过下面几种方式、可以完整发起：（当你在电脑上有其他重要活动时、请不要执行下面的操作、我就是把这个文档又重写了一遍。。给搞丢了）
+1.清除电脑的DNS缓存
+mac命令行执行 sudo killall -HUP mDNSResponder
+2.清除浏览器的DNS缓存  chrome://net-internals/#dns
+3.清除浏览器存在的链接 chrome://net-internals/#sockets
+4.就是清空你自己浏览器的缓存了
+
 
